@@ -3,5 +3,27 @@ description: 使用 Jekyll 搭建的公司网站
 baseurl: ""
 url: ""
 
+# 主题设置
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # 可选: air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
+# 布局设置
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "main"
+
+# 导航菜单
+nav_main:
+  - title: "公司介绍"
+    url: /company/
+  - title: "联系方式"
+    url: /contact/
+
 # 构建设置
 markdown: kramdown 
