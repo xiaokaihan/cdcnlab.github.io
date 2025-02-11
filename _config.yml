@@ -1,46 +1,36 @@
 title: 儿童发展与认知神经科学实验室
-description: 致力于儿童认知发展与脑科学研究
+subtitle: "Department of Psychology | XXX University"
+description: "Understanding the cognitive and neural basis of child development"
 baseurl: "/cdcnlab.github.io"  # 替换成您的仓库名
 url: "https://xiaokaihan.github.io/cdcnlab.github.io/"  # 替换成您的 GitHub Pages URL
 
 # 主题设置
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "contrast"  # 使用高对比度主题，更现代
+minimal_mistakes_skin: "air"  # 改回简洁的亮色主题
 
-# 导航设置
+# 导航设置 - 参考 Vision Lab 的简洁导航
 masthead_links:
-  - title: "首页"
+  - title: "HOME"
     url: /
-  - title: "关于我们"
-    url: /about/
+  - title: "MEMBERS"
+    url: /members/
     children:
-      - title: "实验室介绍"
-        url: /about/intro/
-      - title: "团队成员"
-        url: /about/team/
-      - title: "实验室设施"
-        url: /about/facilities/
-      - title: "合作伙伴"
-        url: /about/partners/
-  - title: "研究方向"
+      - title: "Principal Investigators"
+        url: /members/pi/
+      - title: "Postdoctoral Fellows"
+        url: /members/postdoc/
+      - title: "Graduate Students"
+        url: /members/graduate/
+      - title: "Research Assistants"
+        url: /members/ra/
+  - title: "RESEARCH"
     url: /research/
-    children:
-      - title: "儿童发展"
-        url: /research/child-development/
-      - title: "认知神经科学"
-        url: /research/cognitive-neuroscience/
-      - title: "跨学科研究"
-        url: /research/interdisciplinary/
-  - title: "研究成果"
+  - title: "PUBLICATIONS"
     url: /publications/
-  - title: "资源"
-    url: /resources/
-  - title: "活动与新闻"
-    url: /news/
-  - title: "加入我们"
-    url: /join/
-  - title: "联系我们"
-    url: /contact/
+  - title: "PARTICIPATE"
+    url: /participate/
+  - title: "LAB INFO"
+    url: /lab-info/
 
 # 布局设置
 defaults:

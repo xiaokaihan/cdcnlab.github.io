@@ -3,17 +3,23 @@
 
 // 现代主义风格自定义样式
 body {
-  font-family: 'Noto Sans SC', sans-serif;
-  line-height: 1.8;
-  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
 .page__hero--overlay {
-  padding: 8em 0;
+  padding: 6em 0;
+  background-position: center;
   
   .page__title {
+    font-size: 2.5em;
     font-weight: 300;
-    letter-spacing: 1px;
+  }
+  
+  .page__excerpt {
+    font-size: 1.2em;
+    opacity: 0.8;
   }
 }
 
@@ -62,8 +68,8 @@ body {
 
 // 顶部导航样式
 .masthead {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #f2f3f3;
+  background: #fff;
+  border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
   width: 100%;
@@ -82,9 +88,10 @@ body {
     background: transparent;
     
     a {
-      padding: 1em 0.5em;
       color: #333;
-      font-weight: 400;
+      font-weight: 500;
+      font-size: 0.9em;
+      letter-spacing: 1px;
       
       &:hover {
         color: #000;
@@ -157,5 +164,58 @@ body {
   
   .page__hero--overlay {
     margin-top: 0;
+  }
+}
+
+.research-goals {
+  max-width: 1200px;
+  margin: 4em auto;
+  padding: 0 2em;
+  
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2em;
+  }
+  
+  .goal-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-bottom: 4em;
+    align-items: center;
+    
+    &:nth-child(even) {
+      direction: rtl;
+    }
+    
+    h3 {
+      font-weight: 400;
+      margin-bottom: 1em;
+    }
+    
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #666;
+    }
+    
+    img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+// 响应式调整
+@media (max-width: 768px) {
+  .research-goals .goal-item {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    
+    &:nth-child(even) {
+      direction: ltr;
+    }
   }
 } 
