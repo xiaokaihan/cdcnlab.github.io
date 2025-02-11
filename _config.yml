@@ -1,0 +1,7 @@
+title: 我的网站
+description: 使用 Jekyll 搭建的公司网站
+baseurl: ""
+url: ""
+
+# 构建设置
+markdown: kramdown 
