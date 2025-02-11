@@ -7,8 +7,8 @@ url: "https://xiaokaihan.github.io/cdcnlab.github.io/"  # 替换成您的 GitHub
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "contrast"  # 使用高对比度主题，更现代
 
-# 导航菜单
-nav_main:
+# 导航设置
+masthead_links:
   - title: "首页"
     url: /
   - title: "关于我们"
@@ -49,13 +49,11 @@ defaults:
       type: pages
     values:
       layout: single
-      classes: wide  # 宽屏布局
+      classes: wide
       author_profile: false
-      sidebar:
-        nav: "main"
       header:
-        overlay_filter: "0.3"  # 降低遮罩透明度
-        overlay_color: "#000"  # 黑色遮罩
+        overlay_filter: "0.3"
+        overlay_color: "#000"
       toc: true
       toc_sticky: true
 
