@@ -5,7 +5,7 @@ url: "https://xiaokaihan.github.io/cdcnlab.github.io/"  # 替换成您的 GitHub
 
 # 主题设置
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"  # 使用明亮清新的主题
+minimal_mistakes_skin: "contrast"  # 使用高对比度主题，更现代
 
 # 导航菜单
 nav_main:
@@ -49,11 +49,23 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide  # 宽屏布局
       author_profile: false
       sidebar:
         nav: "main"
+      header:
+        overlay_filter: "0.3"  # 降低遮罩透明度
+        overlay_color: "#000"  # 黑色遮罩
       toc: true
       toc_sticky: true
 
 # 构建设置
-markdown: kramdown 
+markdown: kramdown
+
+# 网站样式
+sass:
+  style: compressed
+
+# 添加自定义CSS
+head_scripts:
+  - https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap 
