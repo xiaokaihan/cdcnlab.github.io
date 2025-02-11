@@ -1,36 +1,77 @@
 title: 儿童发展与认知神经科学实验室
-subtitle: "Department of Psychology | XXX University"
-description: "Understanding the cognitive and neural basis of child development"
-baseurl: "/cdcnlab.github.io"  # 替换成您的仓库名
-url: "https://xiaokaihan.github.io/cdcnlab.github.io/"  # 替换成您的 GitHub Pages URL
+subtitle: Department of Psychology | XXX University
+description: Understanding the cognitive and neural basis of child development
+baseurl: "/cdcnlab.github.io"
+url: "https://xiaokaihan.github.io/cdcnlab.github.io/"
 
 # 主题设置
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"  # 改回简洁的亮色主题
+theme: jekyll-agency
 
-# 导航设置 - 参考 Vision Lab 的简洁导航
-masthead_links:
-  - title: "HOME"
-    url: /
-  - title: "MEMBERS"
-    url: /members/
-    children:
-      - title: "Principal Investigators"
-        url: /members/pi/
-      - title: "Postdoctoral Fellows"
-        url: /members/postdoc/
-      - title: "Graduate Students"
-        url: /members/graduate/
-      - title: "Research Assistants"
-        url: /members/ra/
-  - title: "RESEARCH"
-    url: /research/
-  - title: "PUBLICATIONS"
-    url: /publications/
-  - title: "PARTICIPATE"
-    url: /participate/
-  - title: "LAB INFO"
-    url: /lab-info/
+# 导航菜单
+nav:
+  - title: "研究"
+    section: research
+  - title: "成员"
+    section: team
+  - title: "成果"
+    section: publications
+  - title: "新闻"
+    section: news
+  - title: "参与"
+    section: participate
+  - title: "联系"
+    section: contact
+
+# 首页设置
+header:
+  title: 儿童发展与认知神经科学实验室
+  text: 探索认知发展的神经机制
+  button: 了解更多
+  buttonlink: "#research"
+
+# 研究方向
+services:
+  - title: "认知发展"
+    desc: "探索儿童注意力、记忆和执行功能的发展轨迹"
+    icon: fas fa-brain
+    
+  - title: "脑科学研究"
+    desc: "运用多模态脑成像技术研究认知发展的神经基础"
+    icon: fas fa-microscope
+    
+  - title: "教育应用"
+    desc: "将研究发现转化为教育实践的创新方法"
+    icon: fas fa-graduation-cap
+
+# 团队成员
+team:
+  - name: "张教授"
+    role: "实验室主任"
+    image: assets/img/team/1.jpg
+    social:
+      - url: mailto:email@example.com
+        icon: fas fa-envelope
+      
+  - name: "李博士"
+    role: "博士后研究员"
+    image: assets/img/team/2.jpg
+    social:
+      - url: mailto:email@example.com
+        icon: fas fa-envelope
+
+# 联系信息
+contact:
+  - title: "地址"
+    icon: fas fa-map-marker-alt
+    text: "XXX大学心理学系"
+    
+  - title: "邮箱"
+    icon: fas fa-envelope
+    text: "lab@example.com"
+    
+  - title: "电话"
+    icon: fas fa-phone
+    text: "+86-xxx-xxxx-xxxx"
 
 # 布局设置
 defaults:

@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+@import "global";
+@import "navbar";
+@import "masthead";
+@import "services";
+@import "portfolio";
+@import "timeline";
+@import "team";
+@import "contact";
+@import "footer";
+
+// 自定义样式
+.navbar-brand {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.masthead {
+  .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    .intro-lead-in {
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.team-member {
+  img {
+    border-radius: 4px;
+  }
+  h4 {
+    margin-top: 20px;
+    font-weight: 400;
+  }
+}
+
+.section-heading {
+  font-weight: 300;
+  margin-bottom: 50px;
+} 
