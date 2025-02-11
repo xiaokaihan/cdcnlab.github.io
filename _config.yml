@@ -5,7 +5,7 @@ baseurl: "/cdcnlab.github.io"
 url: "https://xiaokaihan.github.io/cdcnlab.github.io/"
 
 # 主题设置
-theme: jekyll-agency
+remote_theme: raviriley/agency-jekyll-theme
 
 # 导航菜单
 nav:
@@ -72,6 +72,11 @@ contact:
   - title: "电话"
     icon: fas fa-phone
     text: "+86-xxx-xxxx-xxxx"
+
+# 插件设置
+plugins:
+  - jekyll-remote-theme
+  - jekyll-agency
 
 # 布局设置
 defaults:
